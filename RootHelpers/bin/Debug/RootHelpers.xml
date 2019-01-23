@@ -1,0 +1,2159 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RootHelpers</name>
+    </assembly>
+    <members>
+        <member name="T:RootHelpers.Attribute.ControlAttribute">
+            <summary>
+            Forms control 
+            </summary>
+        </member>
+        <member name="P:RootHelpers.Attribute.ControlAttribute.ControlType">
+            <summary>
+            Specifies the name of an  control type to associate with an input HTML field
+            </summary>
+        </member>
+        <member name="M:RootHelpers.Attribute.ControlAttribute.#ctor">
+            <summary>
+            Empty ctor
+            </summary>
+        </member>
+        <member name="M:RootHelpers.Attribute.EditorTabAttribute.#ctor">
+            <summary>
+            Empty ctor
+            </summary>
+        </member>
+        <member name="M:RootHelpers.Attribute.EditorGroupAttribute.#ctor">
+            <summary>
+            Empty ctor
+            </summary>
+        </member>
+        <member name="T:RootHelpers.AlertsHelper">
+            <summary>
+            The alert component is used to provide visual feedback to the user.
+            </summary>
+            <remarks>
+            This can be used to provide the user with either confirmation messages that a record has been saved,
+            warning messages that an error occurred, or an information message based on a system event.
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.Alert``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Type)">
+             <summary>
+             Display Alert
+             </summary>
+             <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <param name="AlertType"> Bootstrap provides four differently styled alerts  : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a alert with Html.Alert()
+            @Html.Alert("This is Primary info alert", RootHelpers.Type.Primary)
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertPrimary``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display Primary alert
+            </summary>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a Primary alert with Html.AlertPrimary()
+            Use: @Html.AlertPrimary()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertSecondary``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display Secondary alert
+            </summary>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a Primary alert with Html.AlertSecondary()
+            Use: @Html.AlertSecondary()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertSuccess``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display Success alert
+            </summary>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a Primary alert with Html.AlertSuccess()
+            Use: @Html.AlertSuccess()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertDanger``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display Danger alert
+            </summary>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a Primary alert with Html.AlertDanger()
+            Use: @Html.AlertDanger()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertWarning``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display Warning alert
+            </summary>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a Primary alert with Html.AlertWarning()
+            Use: @Html.AlertWarning()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertInfo``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display Info alert
+            </summary>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a Primary alert with Html.AlertInfo()
+            Use: @Html.AlertInfo()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertLight``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Light alert
+             </summary>
+             <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Light alert with Html.AlertLight()
+             Use: @Html.AlertLight()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertDark``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display Dark alert
+            </summary>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a Dark alert with Html.AlertDark()
+            Use: @Html.AlertDark()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.Alert``1(System.Web.Mvc.HtmlHelper{``0},RootHelpers.Type,System.String,System.String,System.String)">
+            <summary>
+            Alerts can also contain additional HTML elements like headings, paragraphs and dividers.
+            </summary>
+            <param name="AlertType"> Bootstrap provides four differently styled alerts  : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+            <param name="heading"></param>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">if you add 2 Message Alert direct dividers display.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertDark()
+            Use: @Html.Alert()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertPrimaryAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Primary alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertPrimaryAdditionalContent()
+            Use: @Html.AlertPrimaryAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertSecondaryAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Secondary alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertSecondaryAdditionalContent()
+            Use: @Html.AlertSecondaryAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertSuccessAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Success alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertSuccessAdditionalContent()
+            Use: @Html.AlertSuccessAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertDangerAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Danger alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertDangerAdditionalContent()
+            Use: @Html.AlertDangerAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertWarningAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Warning alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertWarningAdditionalContent()
+            Use: @Html.AlertWarningAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertInfoAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Info alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertInfoAdditionalContent()
+            Use: @Html.AlertInfoAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertLightAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Light alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertLightAdditionalContent()
+            Use: @Html.AlertLightAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertDarkAdditionalContent``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Display Dark alert With Header
+            </summary>
+            <param name="heading">if the message is empty, nothing is displayed, otherwise the message is displayed at the beginning of a block (header)</param>
+            <param name="MessageAlert">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="MessageAlert2">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a alert With Header with Html.AlertDarkAdditionalContent()
+            Use: @Html.AlertDarkAdditionalContent()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Type)">
+            <summary>
+            A dismissible alert is an alert that can be closed by the user by clicking on a small X icon in its top right-hand corner.
+            </summary>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="AlertType"> Bootstrap provides four differently styled alerts  : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+            <returns></returns>
+            <remarks>
+            Create a dismissible alert with Html.AlertDismissing()
+            Use: @Html.AlertDismissing()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertPrimaryDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display dismissible Primary alert
+            </summary>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a dismissible Primary alert with Html.AlertPrimaryDismissing()
+            Use: @Html.AlertPrimaryDismissing()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertSecondaryDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display dismissible Secondary alert
+            </summary>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a dismissible Secondary alert with Html.AlertSecondaryDismissing()
+            Use: @Html.AlertSecondaryDismissing()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertSuccessDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display dismissible Success alert
+            </summary>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a dismissible Success alert with Html.AlertSuccessDismissing()
+            Use: @Html.AlertSuccessDismissing()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertDangerDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display dismissible Danger alert
+             </summary>
+             <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a dismissible Danger alert with Html.AlertDangerDismissing()
+             Use: @Html.AlertDangerDismissing()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertWarningDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+            <summary>
+            Display dismissible Warning alert
+            </summary>
+            <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <returns></returns>
+            <remarks>
+            Create a dismissible Danger alert with Html.AlertWarningDismissing()
+            Use: @Html.AlertWarningDismissing()
+            </remarks>
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertInfoDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display dismissible Info alert
+             </summary>
+             <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a dismissible Danger alert with Html.AlertInfoDismissing()
+             Use: @Html.AlertInfoDismissing()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertLightDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display dismissible Light alert
+             </summary>
+             <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a dismissible Danger alert with Html.AlertLightDismissing()
+             Use: @Html.AlertLightDismissing()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.AlertsHelper.AlertDarkDismissing``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display dismissible Dark alert
+             </summary>
+             <param name="MessageAlert">f the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+              <remarks>
+             Create a dismissible Dark alert with Html.AlertDarkDismissing()
+             Use: @Html.AlertDarkDismissing()
+             </remarks>
+            
+        </member>
+        <member name="T:RootHelpers.BadgeHelper">
+             <summary>
+            Badges are used to highlight items. Badges are numerical indicators of how many items
+             </summary>
+              <remarks>
+             You would normally see badges to indicate the number of new or unread items, depending on the type of application.
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.Badge``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Type)">
+             <summary>
+             Badges the specified message badge.
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <param name="Type"> Bootstrap provides four differently styled alerts  : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.Badge()
+            @Html.Badge("Default", RootHelpers.Type.Primary)
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgePrimary``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Primary Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgePrimary()
+            @Html.BadgePrimary("BadgePrimary")
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeSecondary``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Secondary Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgeSecondary()
+            @Html.BadgeSecondary("BadgeSecondary")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeSuccess``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display success Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgeSuccess()
+            @Html.BadgeSuccess("BadgeSuccess")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeDanger``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Danger Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgeDanger()
+            @Html.BadgeDanger("BadgeDanger")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeWarning``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Warning Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgeWarning()
+            @Html.BadgeWarning("BadgeWarning")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeInfo``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Info Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgeInfo()
+            @Html.BadgeInfo("BadgeInfo")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeLight``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Light Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgeLight()
+            @Html.BadgeLight("BadgeLight")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeDark``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Dark Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.BadgeDark()
+            @Html.BadgeDark("BadgeDark")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadge``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Type)">
+             <summary>
+             Display Dark Pill Badge
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <param name="Type"> Bootstrap provides four differently styled alerts  : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadge()
+            @Html.PillBadge("PillBadge")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgePrimary``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge Primary
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgePrimary()
+            @Html.PillBadgePrimary("PillBadgePrimary")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgeSecondary``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge Secondary
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgeSecondary()
+            @Html.PillBadgeSecondary("PillBadgeSecondary")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgeSuccess``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge Success
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgeSuccess()
+            @Html.PillBadgeSuccess("PillBadgeSuccess")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgeDanger``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge Danger
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgeDanger()
+            @Html.PillBadgeDanger("PillBadgeDanger")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgeWarning``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge Warning
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgeWarning()
+            @Html.PillBadgeWarning("PillBadgeWarning")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgeInfo``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge info
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgeInfo()
+            @Html.PillBadgeInfo("PillBadgeInfo")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgeLight``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge Light
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgeLight()
+            @Html.PillBadgeLight("PillBadgeLight")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.PillBadgeDark``1(System.Web.Mvc.HtmlHelper{``0},System.String)">
+             <summary>
+             Display Pill Badge Dark
+             </summary>
+             <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+             <returns></returns>
+             <remarks>
+             Create a Badge with Html.PillBadgeDark()
+            @Html.PillBadgeDark("PillBadgeDark")
+             </remarks>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.BadgeMarkup``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,RootHelpers.Type,System.Boolean)">
+            <summary>
+            Display  Badge with markup
+            </summary>
+            <param name="MessageBadge">if the message is empty, nothing is displayed, otherwise the alert box is displayed.</param>
+            <param name="href">The href.</param>
+            <param name="Type">The type.</param>
+            <param name="Pillbadges">if set to <c>true</c> [pillbadges].</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.BadgeHelper.GetTextType(RootHelpers.Type)">
+            <summary>
+            Gets the type of the text.
+            </summary>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.BreadcrumbHelper">
+            <summary>
+            A breadcrumb navigation provide links back to each previous page the user navigated through, and shows the user's current location in a website.
+            </summary>
+        </member>
+        <member name="M:RootHelpers.BreadcrumbHelper.Breadcrumb``1(System.Web.Mvc.HtmlHelper{``0},System.Collections.Generic.List{System.String},System.Int32)">
+            <summary>
+            Breadcrumbs the specified nav.
+            </summary>
+            <param name="nav">The nav.</param>
+            <param name="Pos">The position.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.BreadcrumbHelper.Breadcrumb``1(System.Web.Mvc.HtmlHelper{``0},System.Collections.Generic.List{RootHelpers.Breadcrumb})">
+            <summary>
+            Breadcrumbs the specified nav.
+            </summary>
+            <param name="nav">The nav.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.ButtonsHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.Button``1(System.Web.Mvc.HtmlHelper{``0},RootHelpers.Type,System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the specified alert type.
+            </summary>
+            <param name="AlertType">Type of the alert.</param>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonPrimary``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the primary.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonSecondary``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the secondary.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonSuccess``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the success.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonDanger``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the danger.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonWarning``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the warning.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonInfo``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the information.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonLight``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the light.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.ButtonDark``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Buttons the dark.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButton``1(System.Web.Mvc.HtmlHelper{``0},RootHelpers.Type,System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button.
+            </summary>
+            <param name="AlertType">Type of the alert.</param>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonPrimary``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button primary.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonSecondary``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button secondary.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonSuccess``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button success.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonDanger``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button danger.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonWarning``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button warning.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonInfo``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button information.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonLight``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button light.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.ButtonsHelper.OutlineButtonDark``1(System.Web.Mvc.HtmlHelper{``0},System.String,RootHelpers.Sizes,System.Boolean,System.String)">
+            <summary>
+            Outlines the button dark.
+            </summary>
+            <param name="Value">The value.</param>
+            <param name="Sizes">The sizes.</param>
+            <param name="submit">if set to <c>true</c> [submit].</param>
+            <param name="href">The href.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.CardHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.CardHelper.CardwithImage``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String)">
+            <summary>
+            Cardwithes the image.
+            </summary>
+            <param name="imgscr">The imgscr.</param>
+            <param name="text">The text.</param>
+            <param name="title">The title.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.CardHelper.Card``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String)">
+            <summary>
+            Cards the specified text.
+            </summary>
+            <param name="text">The text.</param>
+            <param name="title">The title.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.CarouselHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.CarouselHelper.Slides``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Slideses the specified identifier slide.
+            </summary>
+            <param name="IDSlide">The identifier slide.</param>
+            <param name="nav">The nav.</param>
+            <param name="Pos">The position.</param>
+            <param name="Withcontrols">if set to <c>true</c> [withcontrols].</param>
+            <param name="Withindicators">if set to <c>true</c> [withindicators].</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.CarouselHelper.Crossfade``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Int32,System.Boolean,System.Boolean)">
+            <summary>
+            Crossfades the specified identifier slide.
+            </summary>
+            <param name="IDSlide">The identifier slide.</param>
+            <param name="nav">The nav.</param>
+            <param name="Pos">The position.</param>
+            <param name="Withcontrols">if set to <c>true</c> [withcontrols].</param>
+            <param name="Withindicators">if set to <c>true</c> [withindicators].</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.CollapseHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.CollapseHelper.Collapse``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String)">
+            <summary>
+            Collapses the specified titlebutton.
+            </summary>
+            <param name="titlebutton">The titlebutton.</param>
+            <param name="msgbutton">The msgbutton.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.CollapseHelper.CollapseGroup``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.List{RootHelpers.Accordion},System.Int32)">
+            <summary>
+            Collapses the group.
+            </summary>
+            <param name="IDaccordion">The i daccordion.</param>
+            <param name="ListGroup">The list group.</param>
+            <param name="Pos">The position.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.DataTableHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.RawTable``1(System.Web.Mvc.HtmlHelper{``0},System.Data.DataTable,System.Boolean)">
+            <summary>
+            Raws the table.
+            </summary>
+            <param name="table">The table.</param>
+            <param name="showkeys">if set to <c>true</c> [showkeys].</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.RawLine(System.Data.DataRow,System.Boolean)">
+            <summary>
+            Raws the line.
+            </summary>
+            <param name="ligne">The ligne.</param>
+            <param name="showkeys">if set to <c>true</c> [showkeys].</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.RawTableExpandable``1(System.Web.Mvc.HtmlHelper{``0},System.Data.DataTable,System.Collections.Generic.List{System.String})">
+            <summary>
+            Raws the generate table clik.
+            </summary>
+            <param name="rowDataOnes">The row data ones.</param>
+            <param name="ShowOnlyCols">The show only cols.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.RawGenerateTableClik``1(System.Web.Mvc.HtmlHelper{``0},System.Data.DataTable,System.Collections.Generic.List{System.String})">
+            <summary>
+            Raws the   table expandable.
+            </summary>
+            <param name="rowDataOnes">The row data ones.</param>
+            <param name="ShowOnlyCols">The show only cols.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.RawData``1(System.Web.Mvc.HtmlHelper{``0},System.Data.DataRow,System.Boolean)">
+            <summary>
+            Raws the data.
+            </summary>
+            <param name="ligne">The ligne.</param>
+            <param name="showkeys">if set to <c>true</c> [showkeys].</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.RawDataWithBtns``1(System.Web.Mvc.HtmlHelper{``0},System.Data.DataRow,System.Collections.Generic.Dictionary{System.String,System.Object},System.String)">
+            <summary>
+            Raws the data with BTNS.
+            </summary>
+            <param name="ligne">The ligne.</param>
+            <param name="KeysObjets">The keys objets.</param>
+            <param name="ActionUrl">The action URL.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.EasyTableInfos(System.Collections.Generic.Dictionary{System.String,System.String},System.Int32)">
+            <summary>
+            Easies the table infos.
+            </summary>
+            <param name="rowsTr">The rows tr.</param>
+            <param name="SizeLabel">The size label.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.GetRowString(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the row string.
+            </summary>
+            <param name="row">The row.</param>
+            <param name="nameValue">The name value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.GetRowObject(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the row object.
+            </summary>
+            <param name="row">The row.</param>
+            <param name="nameValue">The name value.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.GetRowObject(System.Data.DataRow,System.Data.DataColumn)">
+            <summary>
+            Gets the row object.
+            </summary>
+            <param name="row">The row.</param>
+            <param name="realColumn">The real column.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DataTableHelper.GetRealColumn(System.Data.DataRow,System.String)">
+            <summary>
+            Gets the real column.
+            </summary>
+            <param name="row">The row.</param>
+            <param name="nameValue">The name value.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.DropdownsHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.DropdownsHelper.Dropdown``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.List{RootHelpers.dropdowns},RootHelpers.Type,RootHelpers.Sizes)">
+            <summary>
+            Dropdowns the specified titlebutton.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="titlebutton">The titlebutton.</param>
+            <param name="dropdowns">The dropdowns.</param>
+            <param name="Type">The type.</param>
+            <param name="Sizes">The sizes.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DropdownsHelper.GetBtnType(RootHelpers.Type)">
+            <summary>
+            Gets the type of the BTN.
+            </summary>
+            <param name="type">The type.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.DropdownsHelper.GetBtnSizes(RootHelpers.Sizes)">
+            <summary>
+            Gets the BTN sizes.
+            </summary>
+            <param name="Sizes">The sizes.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.FormsHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.getpropertyName``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Getproperties the name.
+            </summary>
+            <param name="expression">The expression lamda.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.getpropertyAttirube``3(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Getproperties the name.
+            </summary>
+            <param name="expression">The expression lamda.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.FormModel``1(System.Web.Mvc.HtmlHelper{``0},``0,RootHelpers.Forms)">
+            <summary>
+            Forms the model.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <param name="Forms">The forms.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.Form``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},RootHelpers.Forms)">
+            <summary>
+            Forms the specified expression.
+            </summary>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <param name="Forms">The forms.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.Form2``1(System.Web.Mvc.HtmlHelper{``0},System.Reflection.PropertyInfo,RootHelpers.Forms,System.Boolean)">
+            <summary>
+            Dispay Checkboxes, Radio Buttons, Dropdowns
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="property">The property.</param>
+            <param name="Forms">The forms.</param>
+            <param name="isList">The is list.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.GetInput``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Bootstrap supports all the HTML5 input types: text, password, datetime, datetime-local, date, month, time, week, number, email, url, search, tel, and color.
+            </summary>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootTextBox``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Roots the text box.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootTextArea``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            The textarea is used when you need multiple lines of input.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootFileUpload``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Roots the file upload.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootEmail``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Roots the email.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootPassword``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Roots the password.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootNumber``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Roots the number.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.Rootdate``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Rootdates the specified expression.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootTime``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Roots the time.
+            </summary>
+            <typeparam name="TModel">The type of the t model.</typeparam>
+            <typeparam name="TValue">The type of the t value.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="expression">The expression.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootDropDownList``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            A DropDownList is used when you want to allow the user to pick from multiple options, but by default it only allows one.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <param name="listitem">The listitem.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.DropDownListwithImage``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.List{RootHelpers.RootDropDownList})">
+            <summary>
+            A DropDownList is used when you want to allow the user to pick from multiple options, but by default it only allows one.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+            <param name="listitem">The listitem.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootRadioBox``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            use RadioBox if you want to limit the user to just one selection.
+            </summary>
+            <remarks>Checkboxes and radio buttons are great when you want users to choose from a list of preset options.</remarks>
+            <param name="Htmlhelper"></param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="listitem">The listitem.</param>
+            <returns>MvcHtmlString.</returns>
+        </member>
+        <member name="M:RootHelpers.FormsHelper.RootCheckBox``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.Collections.Generic.List{System.String})">
+            <summary>
+            CheckBox helper method renders a checkbox and has the name and id that you specify.
+            </summary>
+            <remarks>
+            Checkboxes and radio buttons are great when you want users to choose from a list of preset options.
+            use checkbox if you want the user to select any number of options from a list.
+            </remarks>
+            <param name="Htmlhelper">HTML Helpers are used in View to render HTML content.</param>
+            <param name="propertyName">Name of the property.</param>
+            <param name="listitem">The listitem.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.InputgroupHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.InputgroupHelper.Inputgroup``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}},RootHelpers.Sizes)">
+            <summary>
+            Inputgroups the specified expression.
+            </summary>
+            <param name="expression">The expression.</param>
+            <param name="Sizes">The sizes.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.JumbotronHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.JumbotronHelper.Jumbotron``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String)">
+            <summary>
+            Jumbotrons the specified title.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="title">The title.</param>
+            <param name="description">The description.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.MenuHelper">
+            <summary>
+            Menu current active item helper class.
+            </summary>
+        </member>
+        <member name="M:RootHelpers.MenuHelper.IsSelected(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String)">
+            <summary>
+            Determines whether the specified controller is selected.
+            </summary>
+            <param name="html">The HTML.</param>
+            <param name="controller">The controller.</param>
+            <param name="action">The action.</param>
+            <param name="cssClass">The CSS class.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.MenuHelper.StyleIsSelected(System.Web.Mvc.HtmlHelper,System.String,System.String,System.String)">
+            <summary>
+            Styles the is selected.
+            </summary>
+            <param name="html">The HTML.</param>
+            <param name="controller">The controller.</param>
+            <param name="action">The action.</param>
+            <param name="cssClass">The CSS class.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.MenuHelper.saychecked(System.String,System.String,System.Boolean)">
+            <summary>
+            Saycheckeds the specified valeur.
+            </summary>
+            <param name="valeur">The valeur.</param>
+            <param name="valeurvoulu">The valeurvoulu.</param>
+            <param name="contain">if set to <c>true</c> [contain].</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.MenuHelper.sayselected(System.String,System.String,System.Boolean)">
+            <summary>
+            Sayselecteds the specified valeur.
+            </summary>
+            <param name="valeur">The valeur.</param>
+            <param name="valeurvoulu">The valeurvoulu.</param>
+            <param name="contain">if set to <c>true</c> [contain].</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.MenuHelper.sayactive(System.String,System.String,System.Boolean)">
+            <summary>
+            Sayactives the specified valeur.
+            </summary>
+            <param name="valeur">The valeur.</param>
+            <param name="valeurvoulu">The valeurvoulu.</param>
+            <param name="contain">if set to <c>true</c> [contain].</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.ModalHelper">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="M:RootHelpers.ModalHelper.Modal``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String,System.Boolean)">
+            <summary>
+            Modals
+            </summary>
+            <param name="IDmodel">unique id for an HTML element</param>
+            <param name="title">The title.</param>
+            <param name="Partial">Body of Model</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.PaginationHelper">
+            <summary>
+            Add pagination links to help split up your long content into shorter, easier to understand blocks.
+            </summary>
+        </member>
+        <member name="M:RootHelpers.PaginationHelper.CountPages(System.Int32,System.Int32)">
+            <summary>
+            Obtient le nombre de page
+            </summary>
+            <param name="CountResultsTotal">The count results total.</param>
+            <param name="ShowCountResults">nombre de résultat par page</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.PaginationHelper.OffsetPageResults(System.Int32,System.Int32)">
+            <summary>
+            Obtien le offset (position de départ des résultats) en fonction de la page en cours
+            </summary>
+            <param name="CurrentPage">The current page.</param>
+            <param name="ShowCountResults">The show count results.</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.PaginationHelper.ShowResultCount">
+            <summary>
+            Shows the result count.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.PaginationHelper.ShowPagination``1(System.Web.Mvc.HtmlHelper{``0},RootHelpers.ISearchForm,System.Int32,System.String)">
+            <summary>
+            Shows the pagination.
+            </summary>
+            <typeparam name="TModel">The type of the model.</typeparam>
+            <param name="html">The HTML.</param>
+            <param name="form">The form.</param>
+            <param name="CountResultsTotal">The count results total.</param>
+            <param name="SubmitFormId">The submit form identifier.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.ISearchForm">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:RootHelpers.ISearchForm.CurrentPage">
+            <summary>
+            Gets or sets the current page.
+            </summary>
+            <value>
+            The current page.
+            </value>
+        </member>
+        <member name="P:RootHelpers.ISearchForm.LimitResults">
+            <summary>
+            Gets or sets the limit results.
+            </summary>
+            <value>
+            The limit results.
+            </value>
+        </member>
+        <member name="P:RootHelpers.ISearchForm.ShowOrderBy">
+            <summary>
+            Gets or sets the show order by.
+            </summary>
+            <value>
+            The show order by.
+            </value>
+        </member>
+        <member name="T:RootHelpers.PopoversHelper">
+            <summary>
+                    The Popover plugin is similar to tooltips; it is a pop-up box that appears when the user clicks on an element. The difference is that the popover can contain much more content.
+            </summary>
+        </member>
+        <member name="M:RootHelpers.PopoversHelper.Popover``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String,RootHelpers.Popovers,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Popovers the specified popovertitle.
+             </summary>
+             <param name="Popovertitle">to specify the header text of the popover</param>
+             <param name="Popovercontent">to specify the text that should be displayed inside the popover's body</param>
+             <param name="Popovermsg">to specify the text that should be displayed inside the button</param>
+             <param name="Popovers">to set the position of the tooltip on top, bottom, left or the right side of the element.</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <param name="Sizes"> to specify The sizes.</param>
+             <returns></returns>
+             <remarks>
+             Create a Popover with Html.Popover()
+             Use: @Html.Popover()
+             </remarks>
+            
+        </member>
+        <member name="T:RootHelpers.TooltipsHelper">
+            <summary>
+            The Tooltip plugin is small pop-up box that appears when the user moves the mouse pointer over an element
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.Tooltip``1(System.Web.Mvc.HtmlHelper{``0},RootHelpers.Tooltips,System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             display Tooltip
+             </summary>
+             <param name="Tooltips">to set the position of the tooltip on top, bottom, left or the right side of the element</param>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <param name="Sizes"> to specify The sizes.</param>
+             <returns></returns>
+             <remarks>
+             Create a Tooltip with Html.Tooltip()
+             Use: @Html.Tooltip()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipTop``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             display top Tooltip
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <param name="Sizes"> to specify The sizes.</param>
+             <returns></returns>
+             <remarks>
+             Create a top Tooltip with Html.TooltipTop()
+             Use: @Html.TooltipTop()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipRight``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             display Right Tooltips.
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <param name="Sizes"> to specify The sizes.</param>
+             <returns></returns>
+             <remarks>
+             Create a Right Tooltip with Html.TooltipRight()
+             Use: @Html.TooltipRight()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipBottom``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Tooltips the bottom.
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <param name="Sizes"> to specify The sizes.</param>
+             <returns></returns>
+             <remarks>
+             Create a Bottom Tooltip with Html.TooltipBottom()
+             Use: @Html.TooltipBottom()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipLeft``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Tooltips the left.
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <param name="Sizes"> to specify The sizes.</param>
+             <returns></returns>
+             <remarks>
+             Create a Left Tooltip with Html.TooltipLeft()
+             Use: @Html.TooltipLeft()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipMarkup``1(System.Web.Mvc.HtmlHelper{``0},RootHelpers.Tooltips,System.String,System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Tooltips the markup.
+             </summary>
+             <param name="Tooltips">The tooltips.</param>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="href">The href.</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a Tooltip with Html.TooltipMarkup()
+             Use: @Html.TooltipMarkup()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipTopMarkup``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Tooltips the top markup.
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="href">The href.</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a Top Tooltip with Html.TooltipTopMarkup()
+             Use: @Html.TooltipTopMarkup()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipRightMarkup``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Tooltips the right markup.
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="href">The href.</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a Right Tooltip with Html.TooltipRightMarkup()
+             Use: @Html.TooltipRightMarkup()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipBottomMarkup``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Tooltips the bottom markup.
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="href">The href.</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a bottom Tooltip with Html.TooltipBottomMarkup()
+             Use: @Html.TooltipBottomMarkup()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.TooltipLeftMarkup``1(System.Web.Mvc.HtmlHelper{``0},System.String,System.String,System.String,RootHelpers.Type,RootHelpers.Sizes)">
+             <summary>
+             Tooltips the left markup.
+             </summary>
+             <param name="tooltiptitle">to specify the text that should be displayed inside the tooltip </param>
+             <param name="tooltiplabel">to specify the text that should be displayed inside the button</param>
+             <param name="href">The href.</param>
+             <param name="Type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+             <returns></returns>
+             <remarks>
+             Create a Left Tooltip  with Html.TooltipLeftMarkup()
+             Use: @Html.TooltipLeftMarkup()
+             </remarks>
+            
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.GetTextType(RootHelpers.Type)">
+            <summary>
+            Gets the type of the text.
+            </summary>
+            <param name="type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.GetBtnType(RootHelpers.Type)">
+            <summary>
+            Gets the type of the BTN.
+            </summary>
+            <param name="type"> to specify the style that shloud be displayed : Primary, Secondary, Success, Danger, Warning, Info, Light, Dark</param>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.TooltipsHelper.GetBtnSizes(RootHelpers.Sizes)">
+            <summary>
+            Gets the BTN sizes.
+            </summary>
+            <param name="Sizes">The sizes.</param>
+            <returns></returns>
+        </member>
+        <member name="T:RootHelpers.Type">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:RootHelpers.Type.None">
+            <summary>
+            The none
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Primary">
+            <summary>
+            The primary
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Secondary">
+            <summary>
+            The secondary
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Success">
+            <summary>
+            The success
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Danger">
+            <summary>
+            The danger
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Warning">
+            <summary>
+            The warning
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Info">
+            <summary>
+            The information
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Light">
+            <summary>
+            The light
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Type.Dark">
+            <summary>
+            The dark
+            </summary>
+        </member>
+        <member name="T:RootHelpers.Sizes">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:RootHelpers.Sizes.None">
+            <summary>
+            The none
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Sizes.Larger">
+            <summary>
+            The larger
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Sizes.Small">
+            <summary>
+            The small
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Sizes.Block">
+            <summary>
+            The block
+            </summary>
+        </member>
+        <member name="T:RootHelpers.Tooltips">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:RootHelpers.Tooltips.top">
+            <summary>
+            The top
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Tooltips.right">
+            <summary>
+            The right
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Tooltips.bottom">
+            <summary>
+            The bottom
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Tooltips.left">
+            <summary>
+            The left
+            </summary>
+        </member>
+        <member name="T:RootHelpers.Popovers">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:RootHelpers.Popovers.top">
+            <summary>
+            The top
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Popovers.right">
+            <summary>
+            The right
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Popovers.bottom">
+            <summary>
+            The bottom
+            </summary>
+        </member>
+        <member name="F:RootHelpers.Popovers.left">
+            <summary>
+            The left
+            </summary>
+        </member>
+        <member name="T:RootHelpers.PositionDIV">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:RootHelpers.PositionDIV.Vertical">
+            <summary>
+            The vertical
+            </summary>
+        </member>
+        <member name="F:RootHelpers.PositionDIV.Horizontal">
+            <summary>
+            The horizontal
+            </summary>
+        </member>
+        <member name="T:RootHelpers.ErrorPosition">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:RootHelpers.ErrorPosition.Top">
+            <summary>
+            The top
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ErrorPosition.Bottom">
+            <summary>
+            The bottom
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ErrorPosition.Align">
+            <summary>
+            The align
+            </summary>
+        </member>
+        <member name="T:RootHelpers.ErrorType">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="F:RootHelpers.ErrorType.Alert">
+            <summary>
+            The alert
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ErrorType.Text">
+            <summary>
+            The text
+            </summary>
+        </member>
+        <member name="T:RootHelpers.ControlType">
+            <summary>
+            BForms input elements
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.TextBox">
+            <summary>
+            Text input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.TextArea">
+            <summary>
+            Textarea input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.Password">
+            <summary>
+            Password input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.Url">
+            <summary>
+            Url input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.Email">
+            <summary>
+            Email input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.Number">
+            <summary>
+            Number input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.DatePicker">
+            <summary>
+            Datepicker input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.TimePicker">
+            <summary>
+            Time input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.CheckBox">
+            <summary>
+            Checkbox input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.RadioButton">
+            <summary>
+            Radio button input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.DropDownList">
+            <summary>
+            Drop-down list input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.DropDownListwithImage">
+            <summary>
+            Drop-down list input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.ListBox">
+            <summary>
+            Listbox input element
+            </summary>
+        </member>
+        <member name="F:RootHelpers.ControlType.Upload">
+            <summary>
+            File upload input element
+            </summary>
+        </member>
+        <member name="M:RootHelpers.HtmlHelpers.HtmlImageThumbnail(System.String,System.Drawing.Size,System.String,System.String)">
+             <summary>
+             Get the Display Name for a model.
+             </summary>
+             <typeparam name="TModel">The model's Type</typeparam>
+             <param name="helper">The HTML Helper for the model.</param>
+             <returns>Returns the DisplayName for the model.</returns>
+             <remarks>
+             Use the DisplayNameAttribute on your model to assign the name to be returned.
+             Unfortunately we can not use the better/newer DisplayAttribute to specify the name
+             because Microsoft marked it to only be used on properties, not on classes.
+            
+             Use: @Html.DisplayNameFor()
+             </remarks>
+            
+        </member>
+        <member name="T:RootHelpers.Accordion">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:RootHelpers.Accordion.AccordionItem">
+            <summary>
+            Gets or sets the accordion item.
+            </summary>
+            <value>
+            The accordion item.
+            </value>
+        </member>
+        <member name="P:RootHelpers.Accordion.Accordionbody">
+            <summary>
+            Gets or sets the accordionbody.
+            </summary>
+            <value>
+            The accordionbody.
+            </value>
+        </member>
+        <member name="P:RootHelpers.Accordion.Pos">
+            <summary>
+            Gets or sets the position.
+            </summary>
+            <value>
+            The position.
+            </value>
+        </member>
+        <member name="T:RootHelpers.dropdowns">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:RootHelpers.dropdowns.dropdownsItem">
+            <summary>
+            Gets or sets the dropdowns item.
+            </summary>
+            <value>
+            The dropdowns item.
+            </value>
+        </member>
+        <member name="P:RootHelpers.dropdowns.dropdownshref">
+            <summary>
+            Gets or sets the dropdownshref.
+            </summary>
+            <value>
+            The dropdownshref.
+            </value>
+        </member>
+        <member name="P:RootHelpers.dropdowns.Pos">
+            <summary>
+            Gets or sets the position.
+            </summary>
+            <value>
+            The position.
+            </value>
+        </member>
+        <member name="F:RootHelpers.dropdowns._divider">
+            <summary>
+            The divider
+            </summary>
+        </member>
+        <member name="P:RootHelpers.dropdowns.divider">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:RootHelpers.dropdowns"/> is divider.
+            </summary>
+            <value>
+              <c>true</c> if divider; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:RootHelpers.Forms">
+             <summary>
+            
+             </summary>
+        </member>
+        <member name="P:RootHelpers.Forms.Position">
+            <summary>
+            Gets or sets the position.
+            </summary>
+            <value>
+            The position.
+            </value>
+        </member>
+        <member name="P:RootHelpers.Forms.ErrorPosition">
+            <summary>
+            Gets or sets the error position.
+            </summary>
+            <value>
+            The error position.
+            </value>
+        </member>
+        <member name="P:RootHelpers.Forms.ErrorType">
+            <summary>
+            Gets or sets the type of the error.
+            </summary>
+            <value>
+            The type of the error.
+            </value>
+        </member>
+        <member name="F:RootHelpers.Forms._border">
+            <summary>
+            The border
+            </summary>
+        </member>
+        <member name="P:RootHelpers.Forms.Border">
+            <summary>
+            Gets or sets a value indicating whether this <see cref="T:RootHelpers.Forms"/> is border.
+            </summary>
+            <value>
+              <c>true</c> if border; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:RootHelpers.LIST.DateTime">
+            <summary>
+            Model type class from BsDateTimeFor and BsDateTime
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.DateTime.TextValue">
+            <summary>
+            Display value
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.DateTime.DateValue">
+            <summary>
+            Datetime value
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.RangeItem`1.TextValue">
+            <summary>
+            Display value
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.RangeItem`1.ItemValue">
+            <summary>
+            Value
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.RangeItem`1.MinValue">
+            <summary>
+            Bottom limit for ItemValue
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.RangeItem`1.MaxValue">
+            <summary>
+            Top limit for ItemValue
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.RangeItem`1.Display">
+            <summary>
+            Display text
+            </summary>
+        </member>
+        <member name="T:RootHelpers.LIST.Range`1">
+            <summary>
+            Model type class from BsRangeFor
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.Range`1.TextValue">
+            <summary>
+            Display value
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.Range`1.From">
+            <summary>
+            Begin value
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.Range`1.To">
+            <summary>
+            End value
+            </summary>
+        </member>
+        <member name="T:RootHelpers.LIST.SelectListItem">
+            <summary>
+            Represents the selected item in an instance of the BsSelectList
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.SelectListItem.GroupKey">
+            <summary>
+            Option group unique ID
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.SelectListItem.GroupName">
+            <summary>
+            Option group display name
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.SelectListItem.Data">
+            <summary>
+            The dictionary items are serialized in html as data- attributes
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.SelectListItem.IsButton">
+            <summary>
+            Gets or sets a value that indicates if the option should be rendered as a button or inside a select; used for BsMixedButtonGroup component
+            </summary>
+        </member>
+        <member name="T:RootHelpers.LIST.SelectList`1">
+            <summary>
+            Represents a list of items for Dropdown, ListBox, RadioList, CheckboxList binding
+            </summary>
+        </member>
+        <member name="P:RootHelpers.LIST.SelectList`1.SelectedValues">
+            <summary>
+            Selected values
+            </summary>
+        </member>
+        <member name="M:RootHelpers.LIST.SelectList`1.ToSelectList">
+            <summary>
+            Returns all select list items as IEnumerable
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.LIST.SelectList`1.ItemsFromEnum(System.Type,System.Enum[])">
+            <summary>
+            Filla BsSelectList.Items with enum vals
+            </summary>
+        </member>
+        <member name="M:RootHelpers.LIST.SelectList`1.FromSelectList(System.Collections.Generic.IEnumerable{RootHelpers.LIST.SelectListItem})">
+            <summary>
+            Returns a BsSelectList from 
+            </summary>
+        </member>
+        <member name="M:RootHelpers.LIST.SelectList`1.FromEnum(System.Type)">
+            <summary>
+            Returns a BsSelectList from enum using the DescriptionAttribute
+            </summary>
+        </member>
+        <member name="M:RootHelpers.Culture2Helper.IsRighToLeft">
+            <summary>
+            Returns true if the language is a right-to-left language. Otherwise, false.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:RootHelpers.Culture2Helper.GetImplementedCulture(System.String)" -->
+        <member name="M:RootHelpers.Culture2Helper.GetDefaultCulture">
+            <summary>
+            Returns default culture name which is the first name decalared (e.g. en-US)
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:RootHelpers.CultureHelper.IsRighToLeft">
+            <summary>
+            Returns true if the language is a right-to-left language. Otherwise, false.
+            </summary>
+        </member>
+        <member name="M:RootHelpers.CultureHelper.GetImplementedCulture(System.String)">
+            <summary>
+            Returns a valid culture name based on "name" parameter. If "name" is not valid, it returns the default culture "en-US"
+            </summary>
+            <param name="name">Culture's name (e.g. en-US)</param>
+        </member>
+        <member name="M:RootHelpers.CultureHelper.GetDefaultCulture">
+            <summary>
+            Returns default culture name which is the first name decalared (e.g. en-US)
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:RootHelpers.TOOLS.LayoutManager" -->
+        <member name="M:RootHelpers.TOOLS.LayoutManager.#ctor(System.Web.Mvc.TempDataDictionary)">
+            <summary>
+            Constructeur simplifié
+            </summary>
+            <param name="temp"></param>
+        </member>
+        <member name="M:RootHelpers.TOOLS.LayoutManager.#ctor(System.Web.Mvc.Controller)">
+            <summary>
+            Constructeur complet
+            </summary>
+            <param name="controller"></param>
+        </member>
+        <member name="T:RootHelpers.TOOLS.ModelStateHelpers">
+            <summary>
+            MVC ModelState helpers 
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ModelStateHelpers.GetErrors(System.Web.Mvc.ModelStateDictionary,System.String)">
+            <summary>
+            Returns a dictionary will all model state errors
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ModelStateHelpers.ClearModelState(System.Web.Mvc.ModelStateDictionary,System.String)">
+            <summary>
+            Removes model state errors except for the specified filed
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ModelStateHelpers.AddFormError(System.Web.Mvc.ModelStateDictionary,System.String,System.String)">
+            <summary>
+            Substitute for ValidationSummary
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ModelStateHelpers.AddFieldError(System.Web.Mvc.ModelStateDictionary,System.String,System.Type,System.String)">
+            <summary>
+            Substitute for AddModelError
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ModelStateHelpers.ClearModelState(System.Web.Mvc.ModelStateDictionary,System.Collections.Generic.List{System.String})">
+            <summary>
+            Removes model state errors except for the specified fileds
+            </summary>
+        </member>
+        <member name="T:RootHelpers.TOOLS.ReflectionHelpers">
+            <summary>
+            Reflection helper class 
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.GetDescription(System.Enum)">
+            <summary>
+            Returns the Name value of Description attribute
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.EnumDisplayName(System.Type,System.Enum)">
+            <summary>
+            Returns the text value of Display attribute
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.EnumDescription(System.Type,System.Enum)">
+            <summary>
+            Returns the Name value of Description attribute
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.TryGetAttribute``1(System.String,System.Type,``0@)">
+            <summary>
+            Retuns Attribute
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.TryGetAttribute``1(System.Reflection.PropertyInfo,``0@)">
+            <summary>
+            Retuns Attribute
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.GetPropertyInfo``2(System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Gets propertyInfo from expression
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.GetModelStateValue(System.Web.Mvc.HtmlHelper,System.String,System.Type)">
+            <summary>
+            Retuns model state value
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.HasModelStateErros``2(System.Web.Mvc.HtmlHelper{``0},System.Linq.Expressions.Expression{System.Func{``0,``1}})">
+            <summary>
+            Returns true if the specified model property has validation errors
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.MergeAttribute(System.Collections.Generic.IDictionary{System.String,System.Object},System.String,System.String,System.Boolean)">
+            <summary>
+            Appends the specified html attribute to an existing collection
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.GetHtml5Type(System.String)">
+            <summary>
+            Retuns HTML5 input type based on DataTypeAttribute
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.GetHtml5Type(RootHelpers.ControlType)">
+            <summary>
+            Retuns HTML5 input type based on BsControlType
+            </summary>
+        </member>
+        <member name="M:RootHelpers.TOOLS.ReflectionHelpers.InheritsOrImplements(System.Type,System.Type)">
+            <summary>
+            Checks to see if a generic type is a subclass of a raw generic type. eg. List&lt;int&gt; for List&lt;&gt;
+            </summary>
+        </member>
+    </members>
+</doc>

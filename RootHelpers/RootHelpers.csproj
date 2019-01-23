@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2E4543ED-6227-4C2C-B148-4975368C15C5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RootHelpers</RootNamespace>
+    <AssemblyName>RootHelpers</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\RootHelpers.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.6.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.6\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.6\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.6\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attribute\AttributeHelpers.cs" />
+    <Compile Include="Attribute\ControlAttribute.cs" />
+    <Compile Include="Attribute\EditorTabAttribute.cs" />
+    <Compile Include="COMPONENTS\AlertsHelper.cs" />
+    <Compile Include="COMPONENTS\BadgeHelper.cs" />
+    <Compile Include="COMPONENTS\BreadcrumbHelper.cs" />
+    <Compile Include="COMPONENTS\ButtonsHelper.cs" />
+    <Compile Include="COMPONENTS\CardHelper.cs" />
+    <Compile Include="COMPONENTS\CarouselHelper.cs" />
+    <Compile Include="COMPONENTS\CollapseHelper.cs" />
+    <Compile Include="COMPONENTS\DataTableHelper.cs" />
+    <Compile Include="COMPONENTS\DropdownsHelper.cs" />
+    <Compile Include="COMPONENTS\FormsHelper.cs" />
+    <Compile Include="COMPONENTS\InputgroupHelper.cs" />
+    <Compile Include="COMPONENTS\JumbotronHelper.cs" />
+    <Compile Include="COMPONENTS\MenuHelper.cs" />
+    <Compile Include="COMPONENTS\ModalHelper.cs" />
+    <Compile Include="COMPONENTS\NavbarHelper.cs" />
+    <Compile Include="COMPONENTS\NavsHelper.cs" />
+    <Compile Include="COMPONENTS\PaginationHelper.cs" />
+    <Compile Include="COMPONENTS\PopoversHelper.cs" />
+    <Compile Include="COMPONENTS\ProgressHelper.cs" />
+    <Compile Include="COMPONENTS\ScrollspyHelper.cs" />
+    <Compile Include="COMPONENTS\TooltipsHelper.cs" />
+    <Compile Include="Country\CountryHelper.cs" />
+    <Compile Include="ENUM\enum.cs" />
+    <Compile Include="FLAG\flagsHelper.cs" />
+    <Compile Include="FORMS\BasicHtmlHelper.cs" />
+    <Compile Include="GENERAL\Tools.cs" />
+    <Compile Include="Image\HtmlHelpers.cs" />
+    <Compile Include="LIST\List.cs" />
+    <Compile Include="LIST\SelectList.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TOOLS\CultureHelper.cs" />
+    <Compile Include="TOOLS\Helpers.cs" />
+    <Compile Include="TOOLS\LayoutManager.cs" />
+    <Compile Include="TOOLS\LocalizationHelper.cs" />
+    <Compile Include="TOOLS\ModelStateHelpers.cs" />
+    <Compile Include="TOOLS\ReflectionHelpers.cs" />
+    <Compile Include="TOOLS\WidgetsHelpers.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
