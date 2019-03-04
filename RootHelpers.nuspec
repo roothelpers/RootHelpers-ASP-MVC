@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>RootHelpers</id>
+    <version>0.0.3</version>
+    <title>Root Helpers</title>
+    <authors>ahmedoumezzine</authors>
+    <owners>ahmedoumezzine</owners>
+    <licenseUrl>https://github.com/roothelpers</licenseUrl>
+    <projectUrl>https://github.com/roothelpers/RootHelpers-ASP-MVC</projectUrl>
+    <iconUrl>https://avatars2.githubusercontent.com/u/46853910</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <developmentDependency>false</developmentDependency>
+    <description>Roothelpers provides extension , helper classes , and other goodies to help you use the bootstrap css framework from .net code. incorporate bootstrap into your asp.net mvc projects and make your sites more user-friendly and dynamic</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>If you need to know how you are used to it, you can read our README file at Github Project or contact us by email ahmedoumezzine@outlook.fr</copyright>
+    <tags>asp-net htmlhelpers asp-net-mvc helper-functions</tags>
+    <!--
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Windows.Interactivity" targetFramework="net45" />
+    </frameworkAssemblies>
+    -->
+  </metadata>
+ 
+  <files>
+    <file src="RootHelpers\bin\Debug\RootHelpers.dll" target="lib" />
+  </files>
+ 
+</package>
